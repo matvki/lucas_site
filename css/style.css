@@ -26,12 +26,13 @@ main{
     background-color: rgb(255, 251, 0);
 }
 .pic{
+    width: 80vw;
     display: flex;
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
 }
-.pic > img {
+.pic>img {
     width: auto;
     height: 80vh;
 }
