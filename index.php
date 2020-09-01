@@ -13,7 +13,6 @@
             <div id="txt">
                 <img src="./img/logo-tevissen-7.png" alt="">
                 <h1 id="day">Bonjour !</h1>
-                <!-- <h1 id="night">Bonsoir !</h1> -->
                 <p id="lulu">Je suis étudiant en troisième année de Design Graphique. Passionné, je ne demande qu’à partager. <br>La création, l’art, les nouvelles technologies et l’innovation.</p>
                 <p>Langue</p>
                 <div id="language">
