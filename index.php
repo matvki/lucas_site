@@ -19,10 +19,10 @@
                     <?php } ?>
                 </div>
                 <div id="nm">
-                    <div class="form" id="formDay">
+                    <div class="form " id="formDay">
                         <h2 id="day">Bonjour !</h2>
                     </div>
-                    <div class="form" id="formNight">
+                    <div class="form display" id="formNight">
                         <h2 id="night">Bonsoir !</h2>
                     </div>
                 </div>
