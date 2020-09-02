@@ -14,37 +14,54 @@
                 <h1>Lucas <br> Tevissen</h1>
                 <div id="boxA">
                     <?php include_once './controller/projetsCaller.php';
-                foreach ($projects as $key => $value) { ?>
-                    <a class="<?= $value['class'] ?>" href="#<?= $value['class'] ?>"><?php echo ucfirst($value['name']) ?></a><br>
-                <?php } ?>
+                    foreach ($projects as $key => $value) { ?>
+                        <p><a class="<?= $value['class'] ?>" href="#<?= $value['class'] ?>"><?php echo ucfirst($value['name']) ?></a></p>
+                    <?php } ?>
                 </div>
-                
-                <h2 id="day">Bonjour !</h2>
-                <p id="lulu">Je suis étudiant en troisième année de Design Graphique. Passionné, je ne demande qu’à partager. <br>La création, l’art, les nouvelles technologies et l’innovation.</p>
-                <p>Langue</p>
+                <div id="nm">
+                    <div class="form" id="formDay">
+                        <h2 id="day">Bonjour !</h2>
+                    </div>
+                    <div class="form" id="formNight">
+                        <h2 id="night">Bonsoir !</h2>
+                    </div>
+                </div>
+                <p id="lulu">Je suis étudiant en troisième année de Design Graphique. Passionné par l'art, le design et les nouvelles technologies je ne demande qu’à partager!</p>
+                <p class="title">Langue</p>
                 <div id="language">
                     <p>FR</p>
-                    <label class="switch">
-                        <input type="checkbox">
+                    <label id="switchL" class="switch">
+                        <input type="checkbox" >
                         <span class="slider round"></span>
                     </label>
                     <p>EN</p>
+                </div>
+                <p class="title">Mode nuit</p>
+                <div id="nightMode">
+                    <img class="logo" src="./img/soleil.png" alt="sun">
+                    <label class="switch">
+                        <input id="inputN" type="checkbox" name="night">
+                        <span class="slider round"></span>
+                    </label>
+                    <img class="logo" src="./img/lune.png" alt="moon">
                 </div>
             </div>
 
         </div>
     </header>
     <main>
-        <?php foreach ($projects as $key => $value) { ?>
-            <div class="pic" id="<?= $value['class'] ?>">
-                <img src="./img/<?= $value['picture'] ?>" alt="<?= $value['name'] ?>">
-                <div class="square">
-                    <h1><?= $value['name'] ?></h1>
+        <div id="box" class="sun">
+            <?php foreach ($projects as $key => $value) { ?>
+                <div class="pic" id="<?= $value['class'] ?>">
+                    <img src="./img/<?= $value['picture'] ?>" alt="<?= $value['name'] ?>">
+                    <div class="square">
+                        <h1><?= $value['name'] ?></h1>
+                    </div>
                 </div>
-            </div>
-        <?php } ?>
+            <?php } ?>
+        </div>
+
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.6/lib/darkmode-js.min.js"></script>
     <script src="./js/nightMode.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/scroll.js"></script>

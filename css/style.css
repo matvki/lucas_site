@@ -1,10 +1,25 @@
+/* integration font loraitalic*/
+
+@font-face {
+    font-family: 'loraitalic';
+    src: url('../font/lora-italic-variablefont_wght-webfont.woff2') format('woff2'), url('../font/lora-italic-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
 body {
     height: 100vh;
     width: 390vw;
-    margin: 0;
     display: flex;
 }
-
+h1{
+    margin: 0;
+}
+p{margin: 0;}
 body::-webkit-scrollbar {
     display: none;
 }
@@ -15,28 +30,36 @@ body::-webkit-scrollbar {
     display: flex;
     position: fixed;
     left: 2vw;
-    z-index: 10;
+    z-index: 1;
     height: 100vh;
     width: 20vw;
     background-color: rgb(255, 251, 0);
     text-align: center;
 }
-#boxA{
+
+#boxA {
     text-align: left;
 }
-
-#boxA>a{
-    text-decoration: none;
-    font-size: 30px;
-    color: black;
+#boxA>p{
+    margin-top: 1vh;
 }
-.clickA{
+#boxA>p>a {
+    font-family: 'loraitalic';
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+
+}
+
+.clickA {
     text-decoration: underline;
     font-weight: bold;
 }
-#lulu{
+
+#lulu {
     text-align: left;
 }
+
 #txt {
     width: 20vw;
     position: absolute;
@@ -50,25 +73,74 @@ body::-webkit-scrollbar {
 }
 
 #txt>h1 {
+    font-family: 'loraregular';
     font-size: 55px;
     text-align: left;
 }
 
-#txt>p{
-    font-size: 30px;
-    margin-left: 5px;
+#txt>p {
+    font-size: 25px;
+}
+
+#nm {
+    width: 20vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: solid black;
+    border-radius: 80%;
+    width: 8vw;
+    height: 10vh;
+}
+#day+#night{
+    font-family: 'loraregular' ;
+}
+#formDay {
+    position: absolute;
+    left: 2vw;
+    transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    /*IE9*/
+}
+
+#formNight {
+    position: absolute;
+    left: 8vw;
+    transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    /*IE9*/
+    background-color: black;
+}
+#formNight>h2{
+    color: yellow;
+}
+
+#nm>.form>h2 {
+    font-family: 'loraitalic';
+    font-size: 29px;
+}
+.title{
+    margin: 2vh 0;
 }
 /* Night mode */
 #nightMode{
     width: 20vw;
     display: flex;
-    text-align: center;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
 }
 .logo{
     width: 2vw;
+    margin: 0 1vw;
 }
-
 /* The switch - the box around the slider */
 
 .switch {
@@ -133,18 +205,23 @@ input:checked+.slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
 /* Language selector */
-#language{
+
+#language {
     display: flex;
-    justify-content: space-around;
+    width: 20vw;
+    justify-content: center;
+    align-items: center;
+}
+#language>p{
+    margin: 0 1vw;
 }
 
 /* slider */
-
-main {
+#box{
     display: flex;
     padding-left: 10vw;
-    scroll-snap-type: x mandatory;
     justify-content: space-evenly;
     align-items: center;
     height: 100vh;
@@ -155,7 +232,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    scroll-snap-align: start;
     text-align: center;
 }
 
@@ -172,4 +248,13 @@ main {
 .square>h1 {
     width: 20vw;
     background-color: yellow;
+}
+.moon{
+    background-color: black;
+}
+.sun{
+    background-color: white;
+}
+.display{
+    display: none;
 }

@@ -1,21 +1,27 @@
-function addDarkmodeWidget() {
-    new Darkmode().showWidget();
-}
-window.addEventListener('load', addDarkmodeWidget);
-const options = {
-    bottom: '64px', // default: '32px'
-    right: 'unset', // default: '32px'
-    left: '50px', // default: 'unset'
-    time: '0.5s', // default: '0.3s'
-    mixColor: '#fff', // default: '#fff'
-    backgroundColor: '#fff', // default: '#fff'
-    buttonColorDark: '#100f2c', // default: '#100f2c'
-    buttonColorLight: '#fff', // default: '#fff'
-    saveInCookies: false, // default: true,
-    label: '🌓', // default: ''
-    autoMatchOsTheme: true // default: true
+// document.querySelector("#nightmode").addEventListener('click', () =>{
+//     document.querySelector("#box").classList.toggle("sun");
+//     document.querySelector("#box").classList.toggle("moon");
+// });
+// document.querySelector("#night").addEventListener('click', () =>{
+//     document.querySelector("#night").classList.toggle("display");
+//     document.querySelector("#day").classList.toggle("display");
+// })
+// document.querySelector("#day").addEventListener('click', () =>{
+//     document.querySelector("#night").classList.toggle("display");
+//     document.querySelector("#day").classList.toggle("display");
+// })
 
-}
+// document.querySelector('.branding').addEventListener('click', () => {
+//     document.querySelector(".branding").classList.add('clickA');
+//     document.querySelector(".vues").classList.remove('clickA');
+//     document.querySelector(".jaquette").classList.remove('clickA');
+//     document.querySelector(".typo").classList.remove('clickA');
+//     document.querySelector(".motif").classList.remove('clickA');
+//     document.querySelector(".mais").classList.remove('clickA');
+// })
 
-const darkmode = new Darkmode(options);
-darkmode.showWidget();
+let checkbox = document.querySelector("input[name=night]");
+ checkbox.addEventListener('change', () =>{
+    document.querySelector("#box").classList.toggle("sun");
+    document.querySelector("#box").classList.toggle("moon");
+ })
