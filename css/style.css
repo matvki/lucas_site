@@ -29,6 +29,7 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     text-align: center;
+    border: none;
 }
 
 .pic>img {
