@@ -20,23 +20,28 @@
                 </div>
                 <div id="nm">
                     <div class="form " id="formDay">
-                        <h2 id="day">Bonjour !</h2>
+                        <h2 id="dayF" class="day">Bonjour !</h2>
+                        <h2 id="dayE" class="day language">Hello !</h2>
                     </div>
                     <div class="form display" id="formNight">
-                        <h2 id="night">Bonsoir !</h2>
+                        <h2 id="nightF" class="night">Bonsoir !</h2>
+                        <h2 id="nightE" class="night language">Good Evening !</h2>
                     </div>
                 </div>
-                <p id="lulu">Je suis étudiant en troisième année de Design Graphique. Passionné par l'art, le design et les nouvelles technologies je ne demande qu’à partager!</p>
-                <p class="title">Langue</p>
+                <p id="luluF" class="lulu">Je suis étudiant en troisième année de Design Graphique. Passionné par l'art, le design et les nouvelles technologies je ne demande qu’à partager!</p>
+                <p id="luluE" class="lulu language">I am a third year Graphic Design student. Passionate about art, design and new technologies, I only ask to share!</p>
+                <p id="titleF" class="title">Langue</p>
+                <p id="titleE" class="title language">Language</p>
                 <div id="language">
                     <p>FR</p>
                     <label id="switchL" class="switch">
-                        <input type="checkbox" >
+                        <input id="inputL" type="checkbox" name="language">
                         <span class="slider round"></span>
                     </label>
                     <p>EN</p>
                 </div>
-                <p class="title">Mode nuit</p>
+                <p id="titleNMF" class="title">Mode nuit</p>
+                <p id="titleNME" class="title language">Night Mode</p>
                 <div id="nightMode">
                     <img class="logo" src="./img/soleil.png" alt="sun">
                     <label class="switch">
@@ -62,6 +67,7 @@
         </div>
 
     </main>
+    <script src="./js/language.js"></script>
     <script src="./js/nightMode.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/scroll.js"></script>
