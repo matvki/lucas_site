@@ -2,10 +2,17 @@
     <div id="headband">
         <div id="txt">
             <h1>Lucas <br> Tevissen</h1>
-            <div id="boxA">
+            <div id="proF" class="boxA">
                 <?php include_once './controller/projetsCaller.php';
                 foreach ($projects as $key => $value) { ?>
                     <p><a class="<?= $value['class'] ?>" href="#<?= $value['class'] ?>"><?php echo ucfirst($value['name']) ?></a></p>
+
+                <?php } ?>
+            </div>
+            <div id="proE" class="boxA language">
+                <?php include_once './controller/projetsCaller.php';
+                foreach ($projects as $key => $value) { ?>
+                    <p><a class="<?= $value['class'] ?>" href="#<?= $value['class'] ?>"><?php echo ucfirst($value['nameE']) ?></a></p>
 
                 <?php } ?>
             </div>
@@ -19,9 +26,10 @@
                     <h2 id="nightE" class="night language">Good Evening !</h2>
                 </div>
             </div>
-            <p id="luluF" class="lulu">Je suis étudiant en troisième année de Design Graphique. Passionné par l'art, le design et les nouvelles technologies je ne demande qu’à partager!</p>
-            <p id="luluE" class="lulu language">I am a third year Graphic Design student. Passionate about art, design and new technologies, I only ask to share!</p>
-            <p>Venez échanger ici</p>
+            <p id="luluF" class="lulu">Je suis étudiant en troisième année de Design Graphique. Passionné par l'art, le design et les nouvelles technologies je ne demande qu’à partager !</p>
+            <p id="luluE" class="lulu language">I am a third year Graphic Design student. Passionate about art, design and new technologies, I only ask to share !</p>
+            <p id="exchangeF" class="exchange">Venez échanger ici !</p>
+            <p id="exchangeE" class="exchange language">Let's talk !</p>
             <div id="switchBox">
                 <div id="language">
                     <p>FR</p>
