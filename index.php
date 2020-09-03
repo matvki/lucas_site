@@ -6,6 +6,7 @@
     <title>Mon portfolio - Design Graphique</title>
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -13,22 +14,28 @@
     <main>
         <div id="boxF" class="sun box">
             <?php foreach ($projects as $key => $value) { ?>
-                <div class="pic" id="<?= $value['class'] ?>">
-                    <img src="./img/<?= $value['picture'] ?>" alt="<?= $value['name'] ?>">
-                    <div class="square">
-                        <h1><?= $value['name'] ?></h1>
+                <form action="./controller/takeId.php" method="POST">
+                    <div class="pic" id="<?= $value['class'] ?>">
+                        <input type="hidden" name="id" value="<?= $value['id'] ?>">
+                        <button class="pic" type="submit"><img src="./img/<?= $value['picture'] ?>" alt="<?= $value['name'] ?>"></button>
+                        <div class="square">
+                            <h1><?= $value['name'] ?></h1>
+                        </div>
                     </div>
-                </div>
+                </form>
             <?php } ?>
         </div>
         <div id="boxE" class="sun box language">
             <?php foreach ($projects as $key => $value) { ?>
-                <div class="pic" id="<?= $value['class'] ?>">
-                    <img src="./img/<?= $value['picture'] ?>" alt="<?= $value['nameE'] ?>">
-                    <div class="square">
-                        <h1><?= $value['nameE'] ?></h1>
+                <form action="./controller/takeId.php" method="POST">
+                    <div class="pic" id="<?= $value['class'] ?>">
+                        <input type="hidden" name="id" value="<?= $value['id'] ?>">
+                        <button class="pic" type="submit"><img src="./img/<?= $value['picture'] ?>" alt="<?= $value['nameE'] ?>"></button>
+                        <div class="square">
+                            <h1><?= $value['nameE'] ?></h1>
+                        </div>
                     </div>
-                </div>
+                </form>
             <?php } ?>
         </div>
 

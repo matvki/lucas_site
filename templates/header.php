@@ -1,7 +1,9 @@
 <header>
     <div id="headband">
         <div id="txt">
-            <h1>Lucas <br> Tevissen</h1>
+            <div id="boxLogo">
+                <img id="logo" src="./img/logoLucas.png" alt="">
+            </div>
             <div id="proF" class="boxA">
                 <?php include_once './controller/projetsCaller.php';
                 foreach ($projects as $key => $value) { ?>

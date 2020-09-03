@@ -1,7 +1,9 @@
 let checkbox = document.querySelector("input[name=night]");
 checkbox.addEventListener('change', () => {
-    document.querySelector("#box").classList.toggle("sun");
-    document.querySelector("#box").classList.toggle("moon");
+    document.querySelector("#boxE").classList.toggle("sun");
+    document.querySelector("#boxE").classList.toggle("moon");
+    document.querySelector("#boxF").classList.toggle("sun");
+    document.querySelector("#boxF").classList.toggle("moon");
 })
 checkbox.addEventListener('change', () => {
     if ((document.querySelector('#formNight').classList.contains('display')) === true) {

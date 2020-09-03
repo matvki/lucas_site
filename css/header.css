@@ -12,6 +12,14 @@
 }
 /* bandeau */
 
+#boxLogo{
+    height: 10vh;
+    width: auto;
+}
+#logo{
+    width: auto;
+    height: 100%;
+}
 #headband {
     display: flex;
     position: fixed;
@@ -27,10 +35,10 @@
     text-align: left;
 }
 .boxA>p{
-    margin-top: 2vh;
+    margin-top: 0.8vh;
 }
 .boxA>p>a {
-    font-family: 'loraitalic';
+    font-family: 'Lora', serif;
     text-decoration: none;
     font-size: 25px;
     color: black;
@@ -43,6 +51,7 @@
 }
 
 .lulu {
+    font-family: 'Lora', serif;
     text-align: left;
     margin: 0 2vw;
 }
@@ -60,14 +69,14 @@
 }
 
 #txt>h1 {
-    font-family: 'loraregular';
+    font-family: 'Lora', serif;
     font-size: 55px;
     text-align: left;
     margin-top: 4vh;
 }
 
 #txt>p {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 #nm {
@@ -90,7 +99,7 @@
     margin-top: 5vh;
 }
 .day+.night{
-    font-family: 'loraregular' ;
+    font-family: 'Lora', serif;
 }
 #formDay {
     position: absolute;
@@ -113,7 +122,7 @@
 }
 
 #nm>.form>h2 {
-    font-family: 'loraitalic';
+    font-family: 'Lora', serif;
     font-size: 29px;
 }
 .title{
@@ -204,6 +213,7 @@ input:checked+.slider:before {
     align-items: center;
 }
 #language>p{
+    font-family: 'Lora', serif;
     margin: 0 1vw;
     font-size: 25px;
 }
@@ -214,6 +224,6 @@ input:checked+.slider:before {
 }
 .exchange{
     margin-top: 2.5vh;
-    font-family: 'loraitalic';
+    font-family: 'Lora', serif;
     text-decoration: underline;
 }
