@@ -1,9 +1,9 @@
 <?php session_start();
-    $_SESSION["nightMode"] = $_SESSION["nightMode"]; 
-    $_SESSION["language"] = $_SESSION["language"]; ?>
+$_SESSION["nightMode"] = $_SESSION["nightMode"];
+$_SESSION["language"] = $_SESSION["language"]; ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -14,15 +14,15 @@
 </head>
 
 <body id="box" class="<?php if ($_SESSION["nightMode"] == "night") {
-                    echo "moon";
-                }else {
-                    echo "day";
-                } ?>">
+                            echo "moon";
+                        } else {
+                            echo "day";
+                        } ?>">
     <?php include_once './templates/header.php'; ?>
     <main>
         <div id="boxF" class="box <?php if ($_SESSION["language"] == "english") {
-                    echo "language";
-                } ?>">
+                                        echo "language";
+                                    } ?>">
             <?php foreach ($projects as $key => $value) { ?>
                 <form action="./controller/takeId.php" method="POST">
                     <div class="pic" id="<?= $value['class'] ?>">
@@ -36,8 +36,8 @@
             <?php } ?>
         </div>
         <div id="boxE" class="box <?php if ($_SESSION["language"] != "english") {
-                    echo "language";
-                } ?>">
+                                        echo "language";
+                                    } ?>">
             <?php foreach ($projects as $key => $value) { ?>
                 <form action="./controller/takeId.php" method="POST">
                     <div class="pic" id="<?= $value['class'] ?>">

@@ -58,12 +58,8 @@
             <p id="luluE" class="lulu <?php if ($_SESSION["language"] != "english") {
                     echo "language";
                 } ?>">I am a third year Graphic Design student. Passionate about art, design and new technologies, I only ask to share !</p>
-            <p id="exchangeF" class="exchange <?php if ($_SESSION["language"] == "english") {
-                    echo "language";
-                } ?>">Venez échanger ici !</p>
-            <p id="exchangeE" class="exchange <?php if ($_SESSION["language"] != "english") {
-                    echo "language";
-                } ?>">Let's talk !</p>
+            <p id="exchangeF" class="exchange <?php if ($_SESSION["language"] == "english") {    echo "language";    } ?>"><a href="./contact.php">Venez échanger ici !</a></p>
+            <p id="exchangeE" class="exchange <?php if ($_SESSION["language"] != "english") { echo "language"; } ?>"><a href="./contact.php">Let's talk !</a></p>
             <div id="switchBox">
                 <div id="language">
                     <p>FR</p>

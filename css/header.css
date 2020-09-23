@@ -11,7 +11,10 @@
     height: 10vh;
 }
 /* bandeau */
-
+a{
+    text-decoration: none;
+    color: black;
+}
 #boxLogo{
     height: 10vh;
     width: auto;
@@ -227,7 +230,8 @@ input:focus+.slider {
 }
 
 #switchBox{
-    margin-top: 50px;
+    position: absolute;
+    top: 80vh;
 }
 .exchange{
     margin-top: 2.5vh;
