@@ -22,7 +22,9 @@ session_start();
     <?php include_once './templates/header.php'; ?>
     <?php
     if ($_SESSION['nameProjet'][0]['name'] == "Branding Mellifère") {  ?>
-        <main id="boxF" >
+        <main id="boxF" class=" <?php if ($_SESSION["language"] == "english") {
+                    echo "language";
+                } ?>">
             <section class="flex">
                 <article class="flex">
                     <h1><?= $_SESSION['nameProjet'][0]['name'] ?></h1>
@@ -40,7 +42,9 @@ session_start();
                 </article>
             </section>
         </main>
-        <main id="boxE" class="language">
+        <main id="boxE" class=" <?php if ($_SESSION["language"] != "english") {
+                    echo "language";
+                } ?>">
             <section class="flex">
                 <article class="flex">
                     <h1><?= $_SESSION['nameProjet'][0]['nameE'] ?></h1>
@@ -59,7 +63,9 @@ session_start();
             </section>
         </main>
     <?php    } else { ?>
-        <main id="boxF">
+        <main id="boxF" class=" <?php if ($_SESSION["language"] == "english") {
+                    echo "language";
+                } ?>">
             <section class="flex">
                 <article class="flex">
                     <h1><?= $_SESSION['nameProjet'][0]['name'] ?></h1>
@@ -77,7 +83,9 @@ session_start();
                 </article>
             </section>
         </main>
-        <main id="boxE" class="language">
+        <main id="boxE" class=" <?php if ($_SESSION["language"] != "english") {
+                    echo "language";
+                } ?>">
             <section class="flex">
                 <article class="flex">
                     <h1><?= $_SESSION['nameProjet'][0]['nameE'] ?></h1>

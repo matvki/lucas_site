@@ -1,5 +1,6 @@
 <?php session_start();
-    $_SESSION["nightMode"] = $_SESSION["nightMode"] ?>
+    $_SESSION["nightMode"] = $_SESSION["nightMode"]; 
+    $_SESSION["language"] = $_SESSION["language"]; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +20,9 @@
                 } ?>">
     <?php include_once './templates/header.php'; ?>
     <main>
-        <div id="boxF" class="box">
+        <div id="boxF" class="box <?php if ($_SESSION["language"] == "english") {
+                    echo "language";
+                } ?>">
             <?php foreach ($projects as $key => $value) { ?>
                 <form action="./controller/takeId.php" method="POST">
                     <div class="pic" id="<?= $value['class'] ?>">
@@ -32,7 +35,9 @@
                 </form>
             <?php } ?>
         </div>
-        <div id="boxE" class="box language">
+        <div id="boxE" class="box <?php if ($_SESSION["language"] != "english") {
+                    echo "language";
+                } ?>">
             <?php foreach ($projects as $key => $value) { ?>
                 <form action="./controller/takeId.php" method="POST">
                     <div class="pic" id="<?= $value['class'] ?>">
