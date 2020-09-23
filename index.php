@@ -10,6 +10,7 @@ $_SESSION["language"] = $_SESSION["language"]; ?>
     <title>Mon portfolio - Design Graphique</title>
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/png" href="./img/logo.png" />
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 

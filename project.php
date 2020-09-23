@@ -10,6 +10,7 @@ session_start();
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/projet.css">
+    <link rel="icon" type="image/png" href="./img/logo.png" />
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,600;1,700&display=swap" rel="stylesheet">
     <title>Mon portfolio - Projet</title>
 </head>
