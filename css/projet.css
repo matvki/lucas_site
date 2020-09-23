@@ -1,0 +1,48 @@
+.flex {
+  display: flex;
+}
+
+.moon main {
+  color: white;
+}
+
+body {
+  background-color: white;
+}
+
+main section {
+  margin-left: 600px;
+}
+
+main section article {
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 40px;
+}
+
+main section article h1 {
+  font-family: "Lora", serif;
+  font-weight: 700;
+  font-size: 100px;
+}
+
+main section article p {
+  font-size: 25px;
+}
+
+main section article.img {
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+main section article.img div {
+  margin: 0 50px;
+  padding-right: 50px;
+}
+
+main section article.img div img {
+  width: auto;
+  height: 40vh;
+}

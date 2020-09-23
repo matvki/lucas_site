@@ -2,20 +2,28 @@
     <div id="headband">
         <div id="txt">
             <div id="boxLogo">
-                <img id="logo" src="./img/logoLucas.png" alt="">
+                <a href="./"><img id="logo" src="./img/logoLucas.png" alt=""></a>
             </div>
             <div id="proF" class="boxA">
                 <?php include_once './controller/projetsCaller.php';
                 foreach ($projects as $key => $value) { ?>
-                    <p><a class="<?= $value['class'] ?>" href="#<?= $value['class'] ?>"><?php echo ucfirst($value['name']) ?></a></p>
-
+                    <form class="flex" action="./controller/takeId.php" method="POST">
+                        <input type="hidden" name="id" value="<?= $value['id'] ?>">
+                        <button type="submit">
+                            <p><?php echo ucfirst($value['name']) ?></p>
+                        </button>
+                    </form>
                 <?php } ?>
             </div>
             <div id="proE" class="boxA language">
                 <?php include_once './controller/projetsCaller.php';
                 foreach ($projects as $key => $value) { ?>
-                    <p><a class="<?= $value['class'] ?>" href="#<?= $value['class'] ?>"><?php echo ucfirst($value['nameE']) ?></a></p>
-
+                    <form action="./controller/takeId.php" method="POST">
+                        <input type="hidden" name="id" value="<?= $value['id'] ?>">
+                        <button type="submit">
+                            <p><?php echo ucfirst($value['nameE']) ?></p>
+                        </button>
+                    </form>
                 <?php } ?>
             </div>
             <div id="nm">

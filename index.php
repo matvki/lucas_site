@@ -9,10 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="box" class="sun">
     <?php include_once './templates/header.php'; ?>
     <main>
-        <div id="boxF" class="sun box">
+        <div id="boxF" class="box">
             <?php foreach ($projects as $key => $value) { ?>
                 <form action="./controller/takeId.php" method="POST">
                     <div class="pic" id="<?= $value['class'] ?>">
@@ -25,7 +25,7 @@
                 </form>
             <?php } ?>
         </div>
-        <div id="boxE" class="sun box language">
+        <div id="boxE" class="box language">
             <?php foreach ($projects as $key => $value) { ?>
                 <form action="./controller/takeId.php" method="POST">
                     <div class="pic" id="<?= $value['class'] ?>">

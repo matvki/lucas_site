@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (isset($_POST['id'])) {
+if (isset($_POST['id']) && $_POST['id'] != 6 ) {
     $id = $_POST['id'];
     $user = "root";
     $password = "0000";
@@ -18,6 +18,13 @@ if (isset($_POST['id'])) {
     $imgProjet = $request->fetchall(PDO::FETCH_ASSOC);
     $_SESSION['imgProjet'] = $imgProjet;
     
+    $bdd = new PDO("mysql:host=localhost;dbname=siteLuca;charset=utf8", $user, $password);
+    $request = $bdd->prepare("SELECT * FROM projets WHERE id like :id");
+    $request->bindParam(':id', $id);
+    $request->execute();
+    $nameProjet = $request->fetchall(PDO::FETCH_ASSOC);
+    $_SESSION['nameProjet'] = $nameProjet;
+
     header("Location: ../project.php");
     die;
 }else{

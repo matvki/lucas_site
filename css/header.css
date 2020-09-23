@@ -15,6 +15,7 @@
 #boxLogo{
     height: 10vh;
     width: auto;
+    margin-bottom: 20px;
 }
 #logo{
     width: auto;
@@ -29,20 +30,27 @@
     width: 20vw;
     background-color: rgb(255, 251, 0);
     text-align: center;
+    padding-top: 80px;
 }
 
 .boxA {
     text-align: left;
 }
-.boxA>p{
-    margin-top: 0.8vh;
+.boxA form{
+    flex-direction: column;
 }
-.boxA>p>a {
+.boxA button{
+    border: none;
+    background-color: transparent;
+    text-align: left;
+}
+.boxA p{
+    margin-top: 0.8vh;
     font-family: 'Lora', serif;
     text-decoration: none;
     font-size: 25px;
     color: black;
-
+    cursor: pointer;
 }
 
 .clickA {
@@ -219,8 +227,7 @@ input:checked+.slider:before {
 }
 
 #switchBox{
-    position: absolute;
-    top: 90vh;
+    margin-top: 50px;
 }
 .exchange{
     margin-top: 2.5vh;
