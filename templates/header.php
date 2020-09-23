@@ -27,11 +27,15 @@
                 <?php } ?>
             </div>
             <div id="nm">
-                <div class="form " id="formDay">
+                <div class="form <?php if ($_SESSION["nightMode"] == "night") {
+                    echo "display";
+                } ?>" id="formDay">
                     <h2 id="dayF" class="day">Bonjour !</h2>
                     <h2 id="dayE" class="day language">Hello !</h2>
                 </div>
-                <div class="form display" id="formNight">
+                <div class="form <?php if ($_SESSION["nightMode"] != "night") {
+                    echo "display";
+                } ?>" id="formNight">
                     <h2 id="nightF" class="night">Bonsoir !</h2>
                     <h2 id="nightE" class="night language">Good Evening !</h2>
                 </div>
@@ -53,7 +57,9 @@
                 <div id="nightMode">
                     <img class="logo" src="./img/soleil.png" alt="sun">
                     <label class="switch">
-                        <input id="inputN" type="checkbox" name="night">
+                        <input class="<?php if ($_SESSION["nightMode"] == "night") {
+                    echo "checked";
+                } ?>" id="inputN" type="checkbox" name="night">
                         <span class="slider round"></span>
                     </label>
                     <img class="logo" src="./img/lune.png" alt="moon">

@@ -1,3 +1,6 @@
+<?php session_start();
+    $_SESSION["nightMode"] = $_SESSION["nightMode"] ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +12,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 
-<body id="box" class="sun">
+<body id="box" class="<?php if ($_SESSION["nightMode"] == "night") {
+                    echo "moon";
+                }else {
+                    echo "day";
+                } ?>">
     <?php include_once './templates/header.php'; ?>
     <main>
         <div id="boxF" class="box">

@@ -198,7 +198,7 @@ input:focus+.slider {
     box-shadow: 0 0 1px #666666;
 }
 
-input:checked+.slider:before {
+.checked+.slider:before {
     -webkit-transform: translateX(25px);
     -ms-transform: translateX(25px);
     transform: translateX(25px);

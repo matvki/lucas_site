@@ -14,7 +14,11 @@ session_start();
     <title>Mon portfolio - Projet</title>
 </head>
 
-<body  id="box" class="sun">
+<body  id="box" class="<?php if ($_SESSION["nightMode"] == "night") {
+                    echo "moon";
+                }else {
+                    echo "day";
+                } ?>">
     <?php include_once './templates/header.php'; ?>
     <?php
     if ($_SESSION['nameProjet'][0]['name'] == "Branding Mellifère") {  ?>
