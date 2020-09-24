@@ -27,7 +27,7 @@ session_start();
                     echo "language";
                 } ?>">
             <section class="flex">
-                <article class="flex">
+                <article class="txt flex">
                     <h1><?= $_SESSION['nameProjet'][0]['name'] ?></h1>
                     <p><?= $_SESSION['txtProjet'][0]['text'] ?></p>
                 </article>
@@ -47,7 +47,7 @@ session_start();
                     echo "language";
                 } ?>">
             <section class="flex">
-                <article class="flex">
+                <article class="txt flex">
                     <h1><?= $_SESSION['nameProjet'][0]['nameE'] ?></h1>
                     <p><?= $_SESSION['txtProjet'][0]['textE'] ?></p>
                 </article>
@@ -68,7 +68,7 @@ session_start();
                     echo "language";
                 } ?>">
             <section class="flex">
-                <article class="flex">
+                <article class="txt flex">
                     <h1><?= $_SESSION['nameProjet'][0]['name'] ?></h1>
                     <p><?= $_SESSION['txtProjet'][0]['text'] ?></p>
                 </article>
@@ -88,7 +88,7 @@ session_start();
                     echo "language";
                 } ?>">
             <section class="flex">
-                <article class="flex">
+                <article class="txt flex">
                     <h1><?= $_SESSION['nameProjet'][0]['nameE'] ?></h1>
                     <p><?= $_SESSION['txtProjet'][0]['textE'] ?></p>
                 </article>

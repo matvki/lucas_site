@@ -10,10 +10,11 @@ body{
 main {
     section {
         margin-left: 600px;
-        article {
+        article.txt {
             flex-direction: column;
             justify-content: space-evenly;
             margin: 0 40px;
+            width: 60vw;
             h1 {
                 font-family: "Lora", serif;
                 font-weight: 700;
@@ -34,6 +35,89 @@ main {
                 img {
                     width: auto;
                     height: 40vh;
+                }
+            }
+        }
+    }
+}
+// mediaquery
+// mobil
+@media (max-width:767px) {
+    main{
+        section{
+            margin-left: 250px;
+            article.txt{
+                margin: 0 20px;
+                h1{
+                    font-size: 50px;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+            article.img{
+                div{
+                    margin: 0 10px;
+                    padding-right: 25px;
+                }
+            }
+        }
+    }
+}
+// tablette
+@media (min-width:768px) and (max-width:990px) {
+    main{
+        section{
+            margin-left: 300px;
+            article.txt{
+                margin: 0 20px;
+                p{
+                    font-size: 20px;
+                }
+            }
+            article.img{
+                div{
+                    margin: 0 10px;
+                    padding-right: 25px;
+                }
+            }
+        }
+    }
+}
+// ordi
+@media (min-width:991px) and (max-width:1100px){
+    main{
+        section{
+            margin-left: 350px;
+            article.txt{
+                margin: 0 20px;
+                p{
+                    font-size: 20px;
+                }
+            }
+            article.img{
+                div{
+                    margin: 0 10px;
+                    padding-right: 25px;
+                }
+            }
+        }
+    }
+}
+@media (min-width:1101px) and (max-width:1550px){
+    main{
+        section{
+            margin-left: 450px;
+            article.txt{
+                margin: 0 20px;
+                p{
+                    font-size: 20px;
+                }
+            }
+            article.img{
+                div{
+                    margin: 0 10px;
+                    padding-right: 25px;
                 }
             }
         }
