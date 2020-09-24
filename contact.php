@@ -22,8 +22,8 @@ $_SESSION["language"] = $_SESSION["language"]; ?>
     <?php include_once './templates/header.php'; ?>
     <main>
         <h1>Me contacter</h1>
-        <p>Je suis en réflexion/réalisation de cet partie du site, mais je reste a votre disposition a l'adresse e-mail suivante : </p>
-        <p>I am in reflection / realization of this part of the site, but I remain at your disposal at the following e-mail address:</p>
+        <p>Je suis en réflexion/réalisation de cet partie du site, mais je reste a votre disposition a l'adresse e-mail suivante : ltevissen@gmail.com</p>
+        <p>I am in reflection / realization of this part of the site, but I remain at your disposal at the following e-mail address : ltevissen@gmail.com</p>
     </main>
     <script src="./js/language.js"></script>
     <script src="./js/nightMode.js"></script>
