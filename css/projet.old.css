@@ -1,0 +1,13 @@
+.flex{
+    display: flex;
+}
+main section{
+    margin-left: 600px;
+}
+main section article{
+    margin: 100px 50px;
+}
+main section article.img div img{
+    width: auto;
+    height: 30vh;
+}
