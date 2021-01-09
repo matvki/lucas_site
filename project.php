@@ -3,7 +3,7 @@ session_start();
 // var_dump($_SESSION)
 ?>
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 
 <head>
     <meta charset="UTF-8">

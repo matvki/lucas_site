@@ -3,7 +3,7 @@ $_SESSION["nightMode"] = $_SESSION["nightMode"];
 $_SESSION["language"] = $_SESSION["language"]; ?>
 
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 
 <head>
     <meta charset="UTF-8">
