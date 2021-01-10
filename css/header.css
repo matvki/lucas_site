@@ -37,9 +37,11 @@ a{
     padding-top: 80px;
 }
 
-.boxA {
+.boxA{
+    max-width: 80%;
     text-align: left;
 }
+
 .boxA form{
     flex-direction: column;
 }
