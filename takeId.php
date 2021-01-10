@@ -1,0 +1,33 @@
+<?php
+session_start();
+if (isset($_POST['id']) && $_POST['id'] != 6 ) {
+    $id = $_POST['id'];
+    $user = "jgn27981";
+    $password = "YC3e8WA8xqYo";
+    $bdd = new PDO("mysql:host=sql24;dbname=jgn27981;charset=utf8", $user, $password);
+    $request = $bdd->prepare("SELECT * FROM text WHERE projet like :id");
+    $request->bindParam(':id', $id);
+    $request->execute();
+    $txtProjet = $request->fetchall(PDO::FETCH_ASSOC);
+    $_SESSION['txtProjet'] = $txtProjet;
+
+    $bdd = new PDO("mysql:host=sql24;dbname=jgn27981;charset=utf8", $user, $password);
+    $request = $bdd->prepare("SELECT * FROM image WHERE projet like :id");
+    $request->bindParam(':id', $id);
+    $request->execute();
+    $imgProjet = $request->fetchall(PDO::FETCH_ASSOC);
+    $_SESSION['imgProjet'] = $imgProjet;
+    
+    $bdd = new PDO("mysql:host=sql24;dbname=jgn27981;charset=utf8", $user, $password);
+    $request = $bdd->prepare("SELECT * FROM projets WHERE id like :id");
+    $request->bindParam(':id', $id);
+    $request->execute();
+    $nameProjet = $request->fetchall(PDO::FETCH_ASSOC);
+    $_SESSION['nameProjet'] = $nameProjet;
+
+    header("Location: ../project.php");
+    die;
+}else{
+    header("Location: ../");
+    die;
+}
