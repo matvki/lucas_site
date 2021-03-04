@@ -24,8 +24,8 @@ session_start();
     <?php
     if ($_SESSION['nameProjet'][0]['name'] == "Branding Mellifère") {  ?>
         <main id="boxF" class=" <?php if ($_SESSION["language"] == "english") {
-                    echo "language";
-                } ?>">
+            echo "language";
+        } ?>">
             <section class="flex">
                 <article class="txt flex">
                     <h1><?= $_SESSION['nameProjet'][0]['name'] ?></h1>
@@ -34,9 +34,12 @@ session_start();
                 <article class="img flex">
                     <?php $i = count($_SESSION['imgProjet']);
                     $j = 0; 
-                    while ($i != 0) { ?>
-                        <div><img src="./img/<?= $_SESSION['imgProjet'][$j]['name'] ?>" alt="<?= $_SESSION['imgProjet'][$j]['name'] ?>"></div>
-                    <?php
+                    while ($i != 0) { 
+                        if ($_SESSION['imgProjet'][$j]['type'] == 1) { ?>
+                        <div><video src="./img/<?= $_SESSION['imgProjet'][$j]['name'] ?>" width="320px" height="240px" controls ></video></div>
+                        <?php }else { ?>
+                            <div><img src="./img/<?= $_SESSION['imgProjet'][$j]['name'] ?>" alt="<?= $_SESSION['imgProjet'][$j]['name'] ?>"></div>
+                        <?php }
                         $i = $i - 1;
                         $j = $j + 1;
                     } ?>
@@ -54,9 +57,12 @@ session_start();
                 <article class="img flex">
                     <?php $i = count($_SESSION['imgProjet']);
                     $j = 0;
-                    while ($i != 0) { ?>
-                        <div><img src="./img/<?= $_SESSION['imgProjet'][$j]['name'] ?>" alt="<?= $_SESSION['imgProjet'][$j]['name'] ?>"></div>
-                    <?php
+                    while ($i != 0) { 
+                        if ($_SESSION['imgProjet'][$j]['type'] == 1) { ?>
+                        <div><video src="./img/<?= $_SESSION['imgProjet'][$j]['name'] ?>" width="320px" height="240px" controls ></video></div>
+                        <?php }else { ?>
+                            <div><img src="./img/<?= $_SESSION['imgProjet'][$j]['name'] ?>" alt="<?= $_SESSION['imgProjet'][$j]['name'] ?>"></div>
+                        <?php }
                         $i = $i - 1;
                         $j = $j + 1;
                     } ?>
@@ -75,9 +81,12 @@ session_start();
                 <article class="img flex">
                     <?php $i = count($_SESSION['imgProjet']);
                     $j = 0;
-                    while ($i != 0) { ?>
-                        <div><img src="./img/<?= $_SESSION['imgProjet'][$j]['name'] ?>" alt="<?= $_SESSION['imgProjet'][$j]['name'] ?>"></div>
-                    <?php
+                    while ($i != 0) { 
+                        if ($_SESSION['imgProjet'][$j]['type'] == 1) { ?>
+                        <div><video src="./img/<?= $_SESSION['imgProjet'][$j]['name'] ?>" width="320px" height="240px" controls ></video></div>
+                        <?php }else { ?>
+                            <div><img src="./img/<?= $_SESSION['imgProjet'][$j]['name'] ?>" alt="<?= $_SESSION['imgProjet'][$j]['name'] ?>"></div>
+                        <?php }
                         $i = $i - 1;
                         $j = $j + 1;
                     } ?>
@@ -95,9 +104,12 @@ session_start();
                 <article class="img flex">
                     <?php $i = count($_SESSION['imgProjet']);
                     $j = 0;
-                    while ($i != 0) { ?>
-                        <div><img src="./img/<?= $_SESSION['imgProjet'][$j]['name'] ?>" alt="<?= $_SESSION['imgProjet'][$j]['name'] ?>"></div>
-                    <?php
+                    while ($i != 0) { 
+                        if ($_SESSION['imgProjet'][$j]['type'] == 1) { ?>
+                        <div><video src="./img/<?= $_SESSION['imgProjet'][$j]['name'] ?>" width="320px" height="240px" controls ></video></div>
+                        <?php }else { ?>
+                            <div><img src="./img/<?= $_SESSION['imgProjet'][$j]['name'] ?>" alt="<?= $_SESSION['imgProjet'][$j]['name'] ?>"></div>
+                        <?php }
                         $i = $i - 1;
                         $j = $j + 1;
                     } ?>
